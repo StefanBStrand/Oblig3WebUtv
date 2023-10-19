@@ -1,19 +1,19 @@
-/* Quick guide to Sass syntax: 
+/* Quick guide to remember Sass syntax: 
 
     1. No curly braces or semicolons are used.
-    2. Indentation is critical and determines the nesting of selectors.
-    3. Everything is based on whitespace.
+    2. Indentation is crucial and determines the nesting of selectors. (Somewhat like Python..)
+  
     */
     
-$h1color: #0029FF
+$primaryColor: #0029FF
 
 body 
     display: flex
     flex-direction: column
-    min-height: 100vh  // This makes sure that the b
+    min-height: 100vh  // This makes sure that the content in main can grow and "push" the footer down. 
+    // vh for viewport height. In this case, body is the flex container (where main can grow. )
+    font-family: 'Roboto', sans-serif
 
-a 
-    text-decoration: none
 
 header
     display: flex
@@ -21,9 +21,32 @@ header
     section
         display: flex
         align-items: center    
-    h1 
+    h1  
         a 
-            color: $h1color 
+            color: $primaryColor 
+
+a 
+    text-decoration: none
 
 main 
     flex: 1
+    // Shorthand for flex-grow/shrink/basis
+    // Grow: a flex item can grow if necessary. Val 1 means it can grow to fill available space.
+    // Shrink: flex item can shrink. If lack of space in container, item can shrink. 
+    // Basis: auto value means default size will be based on content size. *(css-tricks.com - awesome page!)
+
+img
+    max-width: 100%
+    height: auto    
+
+//Creating a mixin to use for button styling:
+
+$seeMoreButton-border-color: black
+$seeMoreButton-text-color: black
+$seeMoreButton-padding: 10px 20px
+$seeMoreButton-borderRadius: 5px
+
+.seeMoreButton
+    display: inline-block
+    border: 1px solid $seeMoreButton-border-color
+    border-radius: $seeMoreButton-borderRadius

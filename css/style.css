@@ -1,17 +1,13 @@
-/* Quick guide to Sass syntax: 
+/* Quick guide to remember Sass syntax: 
  *
  *  1. No curly braces or semicolons are used.
- *  2. Indentation is critical and determines the nesting of selectors.
- *  3. Everything is based on whitespace.
+ *  2. Indentation is crucial and determines the nesting of selectors. (Somewhat like Python..)
  *  */
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
-
-a {
-  text-decoration: none;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -26,6 +22,21 @@ header h1 a {
   color: #0029FF;
 }
 
+a {
+  text-decoration: none;
+}
+
 main {
   flex: 1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.seeMoreButton {
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 5px;
 }/*# sourceMappingURL=style.css.map */
