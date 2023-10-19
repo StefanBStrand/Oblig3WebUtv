@@ -26,8 +26,22 @@ header
             color: $primaryColor 
 
 a 
-    text-decoration: none
+    text-decoration: none //Eliminates all the underlined links from text being a link. 
 
+#shippingInfo
+    text-align: center
+    background-color: #D9D9D9
+    border-radius: 10px
+    padding: 1px
+    
+
+#PinkMike
+    color: #EE024A
+    text-align: center
+
+#Converse
+    text-align: center
+ 
 main 
     flex: 1
     // Shorthand for flex-grow/shrink/basis
@@ -37,16 +51,29 @@ main
 
 img
     max-width: 100%
-    height: auto    
+    height: auto 
+
+#mainContentFrontPage
+    display: flex
+    flex-direction: column
+    padding: 20px
+    align-items: center
+
+
 
 //Creating a mixin to use for button styling:
 
-$seeMoreButton-border-color: black
-$seeMoreButton-text-color: black
-$seeMoreButton-padding: 10px 20px
-$seeMoreButton-borderRadius: 5px
+@mixin SeeMoreButton
+    background-color: #FFFFFF
+    padding: 10px 20px 
+    text-align: center
+    font-size: 1em
+    border: 2px solid black 
+    border-radius: 5px
+    cursor: pointer  
 
 .seeMoreButton
-    display: inline-block
-    border: 1px solid $seeMoreButton-border-color
-    border-radius: $seeMoreButton-borderRadius
+    @include SeeMoreButton
+    
+
+    
