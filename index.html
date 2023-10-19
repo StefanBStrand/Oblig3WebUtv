@@ -20,15 +20,19 @@
   <body>
     <header>
       <section id="topNavIcons">
-        <button aria-label="Home Page button">
+        <a class="headerIcon" href="product.html" aria-label="Home Page button">
           <i class="fa-solid fa-house"></i>
-        </button>
-        <button aria-label="Shopping cart button">
+        </a>
+        <a class="headerIcon" href="#" aria-label="Shopping cart button">
           <i class="fa-solid fa-cart-shopping"></i>
-        </button>
-        <button aria-label="My account button">
+        </a>
+        <a
+          class="headerIcon"
+          href="customerService.html"
+          aria-label="My account button"
+        >
           <i class="fa-solid fa-user"></i>
-        </button>
+        </a>
       </section>
 
       <h1>
@@ -36,14 +40,14 @@
       </h1>
 
       <section>
-        <button>
+        <a class="headerIcon" href="#">
           <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
+        </a>
 
         <nav id="main-navigation">
-          <button>
+          <a class="headerIcon" href="#">
             <i class="fa-solid fa-bars"></i>
-          </button>
+          </a>
         </nav>
       </section>
     </header>
@@ -54,6 +58,21 @@
         <p>Free returns, always!</p>
       </section>
     </main>
+
+    <section id="productLogos">
+      <a href="product.html">
+        <h2>Mike</h2>
+        <img src="img/mike.jpg" alt="Mike Logo image" />
+      </a>
+      <a href="product.html">
+        <h2>Adibas</h2>
+        <img src="img/adidas new logo (4).jpg" alt="Adibas logo image" />
+      </a>
+      <a href="product.html">
+        <h2>Mookah</h2>
+        <img src="img/mookah.png" alt="Mookah logo image" />
+      </a>
+    </section>
 
     <section id="mainContentFrontPage">
       <a href="product.html">
@@ -70,17 +89,18 @@
     </section>
 
     <footer>
-      <section id="bottomNavIcons">
-        <button aria-label="Home Page button">
-          <i class="fa-solid fa-house"></i>
-        </button>
-        <button aria-label="Shopping cart button">
-          <i class="fa-solid fa-cart-shopping"></i>
-        </button>
-        <button aria-label="My account button">
-          <i class="fa-solid fa-user"></i>
-        </button>
-      </section>
+      <a href="index.html" aria-label="Home Page button">
+        <p>Home</p>
+        <i class="fa-solid fa-house"></i>
+      </a>
+      <a href="#" aria-label="Shopping cart button">
+        <p>Cart</p>
+        <i class="fa-solid fa-cart-shopping"></i>
+      </a>
+      <a href="#" aria-label="My account button">
+        <p>Account</p>
+        <i class="fa-solid fa-user"></i>
+      </a>
     </footer>
   </body>
 </html>

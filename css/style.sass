@@ -24,6 +24,12 @@ header
     h1  
         a 
             color: $primaryColor 
+    
+    .headerIcon
+        font-size: 1.5em
+        text-decoration: none
+        color: black
+        margin: 3px
 
 a 
     text-decoration: none //Eliminates all the underlined links from text being a link. 
@@ -33,6 +39,24 @@ a
     background-color: #D9D9D9
     border-radius: 10px
     padding: 1px
+
+#productLogos
+    display: flex
+    margin: 10px 0
+    justify-content: space-between
+
+    img
+        widt: 100%
+        max-height: 100px
+    
+    a
+        flex: 1
+        box-sizing: border-box
+        text-align: center
+        padding: 10px
+        border: 1px solid black
+        border-radius: 7px
+        margin: 10px
     
 
 #PinkMike
@@ -70,10 +94,30 @@ img
     font-size: 1em
     border: 2px solid black 
     border-radius: 5px
-    cursor: pointer  
+    margin-bottom: 15px
+     
 
 .seeMoreButton
     @include SeeMoreButton
+
+footer
+    display: flex
+    justify-content: space-around
+    border-top: 1px solid #D9D9D9
+
+    a
+        text-align: center
+        color: black
+
+        i
+            font-size: 1.5em
+             
+
+        
+        
+
+
+
     
 
     
