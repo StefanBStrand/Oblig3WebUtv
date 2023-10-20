@@ -10,6 +10,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -42,10 +46,6 @@ header .headerIcon:hover i {
   transform: scale(1.25);
 }
 
-a {
-  text-decoration: none;
-}
-
 #shippingInfo {
   text-align: center;
   background-color: #D9D9D9;
@@ -62,7 +62,7 @@ a {
   widt: 100%;
   max-height: 100px;
 }
-#productLogos a {
+#productLogos div {
   flex: 1;
   box-sizing: border-box;
   text-align: center;
@@ -70,12 +70,24 @@ a {
   border: 1px solid black;
   border-radius: 7px;
   margin: 10px;
-  text-decoration: none;
-  color: black;
 }
-#productLogos a:hover h2 {
-  text-decoration: underline;
+#productLogos div a:first-child {
+  color: black;
+  display: block;
+}
+#productLogos div h2 {
+  transition: transform 0.3s ease;
+}
+#productLogos div h2:hover {
   transform: scale(1.15);
+  text-decoration: underline;
+}
+
+.source-link {
+  font-size: 0.5em;
+  color: blue;
+  text-decoration: underline;
+  margin: 0;
 }
 
 #PinkMike {

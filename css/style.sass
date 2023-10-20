@@ -4,6 +4,8 @@
     2. Indentation is crucial and determines the nesting of selectors. (Somewhat like Python..)
   
     */
+
+
     
 $primaryColor: #0029FF
 
@@ -14,6 +16,9 @@ body
     // vh for viewport height. In this case, body is the flex container (where main can grow. )
     font-family: 'Roboto', sans-serif
 
+a 
+    text-decoration: none //Eliminates all the underlined links from text being a link in general,
+    //But, I am setting underline value for this in other parts when hovered. 
 
 header
     display: flex
@@ -50,16 +55,14 @@ header
         &:hover
             i
                 transform: scale(1.25)
-                
-a 
-    text-decoration: none //Eliminates all the underlined links from text being a link in general,
-    //But, I am setting underline value for this in other parts when hovered. 
 
 #shippingInfo
     text-align: center
     background-color: #D9D9D9
     border-radius: 10px
     padding: 1px
+
+     
 
 #productLogos
     display: flex
@@ -70,7 +73,7 @@ a
         widt: 100%
         max-height: 100px //scaling the images to be same height
     
-    a
+    div
         flex: 1
         box-sizing: border-box
         text-align: center
@@ -78,12 +81,28 @@ a
         border: 1px solid black
         border-radius: 7px
         margin: 10px
-        text-decoration: none
-        color: black
-        &:hover
-            h2
-                text-decoration: underline
+        
+        
+        a:first-child //The above div has 2 a-tags (children). First-child makes sure that the set
+            // properties apply only to the first child. 
+            color: black
+            display: block
+
+        h2
+            transition: transform 0.3s ease
+            
+
+            &:hover
                 transform: scale(1.15)
+                text-decoration: underline
+
+.source-link
+    font-size: 0.5em
+    color: blue
+    text-decoration: underline
+    margin: 0        
+
+
     
 
 #PinkMike
@@ -153,7 +172,7 @@ footer
         &:hover
             transform: scale(1.15) // Magnify on hover for accessibility compliance. 
             
-            
+  
              
 
         
