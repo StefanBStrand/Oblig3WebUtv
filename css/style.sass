@@ -8,8 +8,8 @@
 $primaryColor: #0029FF
 
 body 
-    display: flex
-    flex-direction: column
+    display: flex // making use of css flexbox
+    flex-direction: column //Setting desired directon of content. 
     min-height: 100vh  // This makes sure that the content in main can grow and "push" the footer down. 
     // vh for viewport height. In this case, body is the flex container (where main can grow. )
     font-family: 'Roboto', sans-serif
@@ -23,16 +23,34 @@ header
         align-items: center    
     h1  
         a 
-            color: $primaryColor 
-    
-    .headerIcon
-        font-size: 1.5em
+            display: inline-block //Hover/Transform not working without inline-block display
+            // a tag is by default an inline element - transform needs block level element to function.
+            // (StackOverflow - ) 
+            color: $primaryColor
+            transition: transform 0.3s ease
+
+            &:hover
+                 color: darken($primaryColor, 20%)
+                 transform: scale(1.15)
+                 
+                
+    .topNavIcons, .headerIcon
         text-decoration: none
         color: black
         margin: 3px
 
+    
+    .topNavIcons
+        font-size: 1.5em
+       
+    .headerIcon
+        &:hover
+            i
+                transform: scale(1.25)
+
 a 
-    text-decoration: none //Eliminates all the underlined links from text being a link. 
+    text-decoration: none //Eliminates all the underlined links from text being a link in general,
+    //But, I am setting underline value for this in other parts when hovered. 
 
 #shippingInfo
     text-align: center

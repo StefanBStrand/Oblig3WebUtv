@@ -19,13 +19,24 @@ header section {
   align-items: center;
 }
 header h1 a {
+  display: inline-block;
   color: #0029FF;
+  transition: transform 0.3s ease;
 }
-header .headerIcon {
-  font-size: 1.5em;
+header h1 a:hover {
+  color: #001999;
+  transform: scale(1.15);
+}
+header .topNavIcons, header .headerIcon {
   text-decoration: none;
   color: black;
   margin: 3px;
+}
+header .topNavIcons {
+  font-size: 1.5em;
+}
+header .headerIcon:hover i {
+  transform: scale(1.25);
 }
 
 a {
