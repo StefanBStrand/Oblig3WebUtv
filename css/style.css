@@ -3,11 +3,12 @@
  *  1. No curly braces or semicolons are used.
  *  2. Indentation is crucial and determines the nesting of selectors. (Somewhat like Python..)
  *  */
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+#gridContainer {
   font-family: "Roboto", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "header" "main" "footer";
 }
 
 a {
@@ -15,6 +16,7 @@ a {
 }
 
 header {
+  grid-area: header;
   display: flex;
   justify-content: space-between;
 }
@@ -53,16 +55,19 @@ header .headerIcon:hover i {
   padding: 1px;
 }
 
-#productLogos {
+main {
+  grid-area: main;
+}
+main #productLogos {
   display: flex;
   margin: 10px 0;
   justify-content: space-between;
 }
-#productLogos img {
+main #productLogos img {
   widt: 100%;
   max-height: 100px;
 }
-#productLogos div {
+main #productLogos div {
   flex: 1;
   box-sizing: border-box;
   text-align: center;
@@ -71,14 +76,14 @@ header .headerIcon:hover i {
   border-radius: 7px;
   margin: 10px;
 }
-#productLogos div a:first-child {
+main #productLogos div a:first-child {
   color: black;
   display: block;
 }
-#productLogos div h2 {
+main #productLogos div h2 {
   transition: transform 0.3s ease;
 }
-#productLogos div h2:hover {
+main #productLogos div h2:hover {
   transform: scale(1.15);
   text-decoration: underline;
 }
@@ -130,6 +135,7 @@ img {
 }
 
 footer {
+  grid-area: footer;
   display: flex;
   justify-content: space-around;
   border-top: 1px solid #D9D9D9;
