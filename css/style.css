@@ -89,6 +89,7 @@ main #productLogos div h2:hover {
   text-decoration: underline;
 }
 main #product-page-banner {
+  display: flexbox;
   background-color: #d4d2d2;
   border-radius: 8px;
   margin: 10px;
@@ -117,7 +118,7 @@ main #product-page-banner #search-result-info {
   margin: 10px;
 }
 main #product-page-banner #brands {
-  display: flex;
+  display: flexbox;
 }
 main #product-page-banner #brands ul {
   color: grey;
