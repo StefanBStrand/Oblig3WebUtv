@@ -116,6 +116,18 @@ main #product-page-banner #search-result-info {
   display: block;
   margin: 10px;
 }
+main #product-page-banner #brands ul {
+  color: grey;
+  font-weight: lighter;
+}
+main #product-page-banner #brands ul li:nth-child(n+2) a {
+  color: black;
+  text-decoration: underline;
+  padding: 2px;
+}
+main #product-page-banner #brands li {
+  display: inline;
+}
 
 .source-link {
   font-size: 0.5em;
