@@ -88,24 +88,27 @@ main #productLogos div h2:hover {
   transform: scale(1.15);
   text-decoration: underline;
 }
-main #breadcrumb-nav {
+main #product-page-banner {
+  background-color: #d4d2d2;
+}
+main #product-page-banner #breadcrumb-nav {
   color: grey;
-  margin-bottom: 10px;
+  padding: 3px;
   font-size: 0.9em;
 }
-main #breadcrumb-nav li {
+main #product-page-banner #breadcrumb-nav li {
   display: inline;
 }
-main #breadcrumb-nav li a {
+main #product-page-banner #breadcrumb-nav li a {
   text-decoration: underline;
   color: grey;
   display: inline-block;
   transition: transform 0.3s ease;
 }
-main #breadcrumb-nav li a:hover {
+main #product-page-banner #breadcrumb-nav li a:hover {
   transform: scale(1.1);
 }
-main #search-result-info {
+main #product-page-banner #search-result-info {
   color: black;
   display: block;
 }
