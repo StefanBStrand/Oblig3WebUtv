@@ -98,6 +98,7 @@ main #breadcrumb-nav li {
 }
 main #breadcrumb-nav li a {
   text-decoration: underline;
+  color: grey;
   display: inline-block;
   transition: transform 0.3s ease;
 }
@@ -105,18 +106,8 @@ main #breadcrumb-nav li a:hover {
   transform: scale(1.1);
 }
 main #search-result-info {
-  align-items: baseline;
-  justify-content: space-between;
-}
-main #search-result-info h1 {
-  color: red;
-}
-main #search-result-info a {
-  color: grey;
-  text-decoration: none;
-}
-main #search-result-info a:hover {
-  text-decoration: underline;
+  color: black;
+  display: block;
 }
 
 .source-link {
