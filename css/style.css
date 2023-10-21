@@ -88,6 +88,36 @@ main #productLogos div h2:hover {
   transform: scale(1.15);
   text-decoration: underline;
 }
+main #breadcrumb-nav {
+  color: grey;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+}
+main #breadcrumb-nav li {
+  display: inline;
+}
+main #breadcrumb-nav li a {
+  text-decoration: underline;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+main #breadcrumb-nav li a:hover {
+  transform: scale(1.1);
+}
+main #search-result-info {
+  align-items: baseline;
+  justify-content: space-between;
+}
+main #search-result-info h1 {
+  color: red;
+}
+main #search-result-info a {
+  color: grey;
+  text-decoration: none;
+}
+main #search-result-info a:hover {
+  text-decoration: underline;
+}
 
 .source-link {
   font-size: 0.5em;
