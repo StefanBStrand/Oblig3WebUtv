@@ -163,7 +163,9 @@ main
     .product-grid
 
         figure
-            position: relative
+            position: relative // Sets style position to relative. Doesnt move item
+            // itself, but makes it possible to place absolutely positioned child
+                //elements of the property.
 
             img
                 display: block
@@ -180,7 +182,7 @@ main
                 text-decoration: underline
                 padding: 2px 
                 font-size: 0.9em
-                z-index: 1
+                z-index: 1 // Ensures the label stays in front of other elements!
                     
             
                 
