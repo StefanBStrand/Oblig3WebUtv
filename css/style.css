@@ -58,6 +58,8 @@ header .headerIcon:hover i {
 
 main {
   grid-area: main;
+  flex: 1;
+  padding: 5px;
 }
 main #productLogos {
   display: flex;
@@ -162,6 +164,29 @@ main .product-grid figure .product-item-label {
   z-index: 1;
 }
 
+#help-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#help-center .seeMoreButton {
+  padding: 5px;
+  font-size: 0.8em;
+}
+
+#link-box-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+#link-box-wrapper a {
+  border: 2px solid black;
+  border-radius: 8px;
+  text-align: center;
+  padding: 5px;
+  width: 33%;
+  margin: 5px;
+}
+
 .source-link {
   font-size: 0.5em;
   color: blue;
@@ -176,10 +201,6 @@ main .product-grid figure .product-item-label {
 
 #Converse {
   text-align: center;
-}
-
-main {
-  flex: 1;
 }
 
 img {
