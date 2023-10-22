@@ -134,7 +134,7 @@ main
             color: black
             display: block
             margin: 10px
-            
+
             h1
                 font-size: 1.25em
                 margin: 0
@@ -159,6 +159,21 @@ main
         aside
             text-align: right
             font-size: 0.9em
+    
+    .product-grid
+        display: flexbox
+
+        img
+            width: 100%
+            height: auto
+            // border: 1px solid black
+
+    .product-item-label
+        background-color: black
+        color: white
+        padding: 2px
+        font-size: 0.9em
+        
             
                 
 
@@ -223,6 +238,7 @@ footer
     justify-content: space-around // Items are evenly spaced out on the line, equal space surrounding. 
     // NB! Space around might not have support in Edge. Chrome might also lack support for some. 
     border-top: 1px solid #D9D9D9
+    margin-bottom: 10px
 
     a
         text-align: center
