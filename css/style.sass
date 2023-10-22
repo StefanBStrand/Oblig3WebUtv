@@ -161,23 +161,29 @@ main
             font-size: 0.9em
     
     .product-grid
-        display: flexbox
 
-        img
-            width: 100%
-            height: auto
-            // border: 1px solid black
+        figure
+            position: relative
 
-    .product-item-label
-        background-color: black
-        color: white
-        padding: 2px
-        font-size: 0.9em
-        
+            img
+                display: block
+                width: 100%
+                height: auto
+                // border: 1px solid black
+
+            .product-item-label
+                position: absolute
+                top: 10px
+                right: 10px
+                background-color: black
+                color: white
+                text-decoration: underline
+                padding: 2px 
+                font-size: 0.9em
+                z-index: 1
+                    
             
                 
-
-
 .source-link
     font-size: 0.5em
     color: blue
