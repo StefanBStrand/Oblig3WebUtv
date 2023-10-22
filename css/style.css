@@ -168,15 +168,18 @@ main .product-grid figure .product-item-label {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 0.8em;
 }
 #help-center .seeMoreButton {
   padding: 5px;
-  font-size: 0.8em;
+  font-size: 0.9em;
+  margin-top: 16px;
 }
 
 #link-box-wrapper {
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 25px;
 }
 #link-box-wrapper a {
   border: 2px solid black;
@@ -185,6 +188,14 @@ main .product-grid figure .product-item-label {
   padding: 5px;
   width: 33%;
   margin: 5px;
+  color: black;
+  transition: transform 0.3s ease;
+}
+#link-box-wrapper a:hover {
+  transform: scale(1.1);
+}
+#link-box-wrapper a i {
+  font-size: 1.8em;
 }
 
 .source-link {
@@ -235,6 +246,9 @@ footer {
   justify-content: space-around;
   border-top: 1px solid #D9D9D9;
   margin-bottom: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 footer a {
   text-align: center;

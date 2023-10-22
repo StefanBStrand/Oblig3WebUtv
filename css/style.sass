@@ -195,14 +195,18 @@ main
     display: flex
     justify-content: space-between
     align-items: center
+    font-size: 0.8em
 
     .seeMoreButton
         padding: 5px
-        font-size: 0.8em
+        font-size: 0.9em
+        margin-top: 16px
 
 #link-box-wrapper
     display: flex
     justify-content: space-evenly
+    margin-bottom: 25px
+
     a
         border: 2px solid black
         border-radius: 8px
@@ -210,6 +214,14 @@ main
         padding: 5px
         width: 33%
         margin: 5px
+        color: black
+        transition: transform 0.3s ease
+        &:hover
+            transform: scale(1.1)
+
+        i
+            font-size: 1.8em
+
     
 
     
@@ -273,6 +285,9 @@ footer
     // NB! Space around might not have support in Edge. Chrome might also lack support for some. 
     border-top: 1px solid #D9D9D9
     margin-bottom: 10px
+    position: fixed
+    bottom: 0
+    width: 100%
 
     a
         text-align: center
