@@ -143,6 +143,7 @@ main #product-page-banner aside {
 }
 main .product-grid figure {
   position: relative;
+  padding: 10px;
 }
 main .product-grid figure img {
   display: block;
