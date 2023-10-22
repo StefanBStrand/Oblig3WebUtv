@@ -74,6 +74,7 @@ main
     grid-area: main
     flex: 1
     padding: 5px
+    padding-bottom: 80px
     // Shorthand for flex-grow/shrink/basis
     // Grow: a flex item can grow if necessary. Val 1 means it can grow to fill available space.
     // Shrink: flex item can shrink. If lack of space in container, item can shrink. 
@@ -85,7 +86,6 @@ main
         justify-content: space-between
 
         img
-            widt: 100% // Typo here - but fixing the typo (actually working) creates a problem wiht the images... 
             max-height: 100px //scaling the images to be same height
         
         div
@@ -113,7 +113,6 @@ main
 
 
     #product-page-banner
-        display: flexbox
         background-color: #d4d2d2
         border-radius: 8px
         margin: 10px
@@ -149,7 +148,6 @@ main
                 margin: 0
 
         #brands
-            display: flexbox
 
             ul
                 color: grey
@@ -194,7 +192,7 @@ main
                 font-size: 0.9em
                 z-index: 1 // Ensures the label stays in front of other elements!
 
-#help-center
+.help-center
     display: flex
     justify-content: space-between
     align-items: center
@@ -205,12 +203,13 @@ main
         font-size: 0.9em
         margin-top: 16px
 
-#link-box-wrapper
+.link-box-wrapper
     display: flex
     justify-content: space-evenly
     margin-bottom: 25px
 
     a
+        font-size: 0.8em
         border: 2px solid black
         border-radius: 8px
         text-align: center
@@ -224,6 +223,9 @@ main
 
         i
             font-size: 1.8em
+
+        p
+            display: none
 
     
 
@@ -259,6 +261,10 @@ img
     flex-direction: column
     padding: 20px
     align-items: center
+
+    div 
+        text-align: center
+        margin-bottom: 30px
 
 
 
@@ -347,7 +353,15 @@ footer
             p 
                 margin: 0
                 color: grey
-        
+
+    #mainContentFrontPage
+        flex-direction: row
+
+    .link-box-wrapper
+        a
+            p
+                display: block
+
     
 
              

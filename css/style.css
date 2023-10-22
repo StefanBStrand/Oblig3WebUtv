@@ -64,6 +64,7 @@ main {
   grid-area: main;
   flex: 1;
   padding: 5px;
+  padding-bottom: 80px;
 }
 main #productLogos {
   display: flex;
@@ -71,7 +72,6 @@ main #productLogos {
   justify-content: space-between;
 }
 main #productLogos img {
-  widt: 100%;
   max-height: 100px;
 }
 main #productLogos div {
@@ -95,7 +95,6 @@ main #productLogos div h2:hover {
   text-decoration: underline;
 }
 main #product-page-banner {
-  display: flexbox;
   background-color: #d4d2d2;
   border-radius: 8px;
   margin: 10px;
@@ -126,9 +125,6 @@ main #product-page-banner #search-result-info {
 main #product-page-banner #search-result-info h1 {
   font-size: 1.25em;
   margin: 0;
-}
-main #product-page-banner #brands {
-  display: flexbox;
 }
 main #product-page-banner #brands ul {
   color: grey;
@@ -168,24 +164,25 @@ main .product-grid figure .product-item-label {
   z-index: 1;
 }
 
-#help-center {
+.help-center {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 0.8em;
 }
-#help-center .seeMoreButton {
+.help-center .seeMoreButton {
   padding: 5px;
   font-size: 0.9em;
   margin-top: 16px;
 }
 
-#link-box-wrapper {
+.link-box-wrapper {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 25px;
 }
-#link-box-wrapper a {
+.link-box-wrapper a {
+  font-size: 0.8em;
   border: 2px solid black;
   border-radius: 8px;
   text-align: center;
@@ -195,11 +192,14 @@ main .product-grid figure .product-item-label {
   color: black;
   transition: transform 0.3s ease;
 }
-#link-box-wrapper a:hover {
+.link-box-wrapper a:hover {
   transform: scale(1.1);
 }
-#link-box-wrapper a i {
+.link-box-wrapper a i {
   font-size: 1.8em;
+}
+.link-box-wrapper a p {
+  display: none;
 }
 
 .source-link {
@@ -228,6 +228,10 @@ img {
   flex-direction: column;
   padding: 20px;
   align-items: center;
+}
+#mainContentFrontPage div {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .seeMoreButton {
@@ -309,5 +313,11 @@ footer a:hover {
   #desktopNav #searchInput p {
     margin: 0;
     color: grey;
+  }
+  #mainContentFrontPage {
+    flex-direction: row;
+  }
+  .link-box-wrapper a p {
+    display: block;
   }
 }/*# sourceMappingURL=style.css.map */
