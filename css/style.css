@@ -277,6 +277,11 @@ footer a:hover {
     grid-template-rows: auto auto auto;
     grid-template-areas: "header nav nav" "main main main" "footer footer footer";
   }
+  header {
+    justify-content: flex-start;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
   nav {
     grid-area: nav;
   }
@@ -286,7 +291,11 @@ footer a:hover {
   #desktopNav {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+  }
+  #desktopNav a {
+    color: black;
+    text-decoration: underline;
   }
   #desktopNav #searchInput {
     display: flex;
