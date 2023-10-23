@@ -168,6 +168,14 @@ main
             font-size: 0.9em
     
     .product-grid //Remember!: task requires mobile to have only one column!
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        justify-content: space-between
+        article
+            width: 50%
+            
+     
 
         figure
             position: relative // Sets style position to relative. Doesnt move item
@@ -362,13 +370,13 @@ footer
             p
                 display: block
 
+    .product-grid
+        article
+            max-width: 30%
+
+
     footer
         display: none
-
-
-    
-
-             
 
         
         

@@ -143,6 +143,15 @@ main #product-page-banner aside {
   text-align: right;
   font-size: 0.9em;
 }
+main .product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+main .product-grid article {
+  width: 50%;
+}
 main .product-grid figure {
   position: relative;
   padding: 10px;
@@ -319,6 +328,9 @@ footer a:hover {
   }
   .link-box-wrapper a p {
     display: block;
+  }
+  .product-grid article {
+    max-width: 30%;
   }
   footer {
     display: none;
