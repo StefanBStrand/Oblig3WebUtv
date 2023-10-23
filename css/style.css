@@ -326,6 +326,9 @@ footer a:hover {
   #mainContentFrontPage {
     flex-direction: row;
   }
+  #mainContentFrontPage #Converse {
+    margin-top: 75px;
+  }
   .link-box-wrapper a p {
     display: block;
   }
